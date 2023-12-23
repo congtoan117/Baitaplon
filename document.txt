@@ -1,0 +1,44 @@
+﻿- Public: thư mục này chứa các file css, js, images, upload của cả backend và frontend
+    -- admin: thư mục này chứa các file bên admin       
+    -- frontend là thư mục chứa các file giao diện
+
+- Forder admin: là thư mục chứa các file, modules xử lý của admin (backend)
+    + Forder modules thư mục này sẽ chứa các modules mà chúng ta quản lý ví dụ như quản lý thành viên, sản phẩm, ....
+
+
+- Tiếp đến là thư mục autoload và file autoload.php trong thư mục autoload :
+    + File autoload.php để gọi file xử lý chung mà tất cả các file đều gọi
+
+
+- Thư mục libraries: thư mục này sẽ tạo các file xử lý như:
+    + Function
+    + Database
+
+Model (M):
+Đại diện cho dữ liệu và logic xử lý dữ liệu.
+Chịu trách nhiệm lấy, lưu trữ và xử lý dữ liệu.
+Không có thông tin về cách dữ liệu được hiển thị hoặc hiển thị ra sao.
+
+View (V):
+Đại diện cho giao diện người dùng (UI) và hiển thị dữ liệu cho người dùng.
+Chịu trách nhiệm hiển thị thông tin từ Model và tương tác với người dùng.
+
+Controller (C):
+Chịu trách nhiệm điều phối các sự kiện và tương tác giữa Model và View.
+Nhận các yêu cầu từ người dùng qua View, xử lý nó và cập nhật Model, sau đó thông báo cho View để hiển thị kết quả.
+
+admin: Có thể đại diện cho phần Controller và View của trang quản trị (Admin). Các file PHP trong thư mục này có thể chịu trách nhiệm xử lý logic của trang quản trị và hiển thị dữ liệu cho người dùng.
+
+autoload: Có thể chứa các file liên quan đến việc tự động tải các lớp và hàm cần thiết trong ứng dụng. Điều này có thể liên quan đến quá trình tải các lớp, thư viện, hay hàm mà bạn muốn sử dụng mà không cần phải tải chúng thủ công.
+
+database: Có thể đại diện cho phần Model, chứa các file liên quan đến kết nối và thao tác với cơ sở dữ liệu.
+
+layouts: Có thể chứa các file layout hay template được sử dụng để hiển thị giao diện người dùng. Có thể đây là phần View.
+
+libraries: Có thể chứa các thư viện hay lớp được tạo ra để sử dụng trong ứng dụng.
+
+login: Có thể là phần xử lý đăng nhập. Các file trong thư mục này có thể chịu trách nhiệm xử lý logic đăng nhập và hiển thị giao diện đăng nhập.
+
+partials: Có thể chứa các file nhỏ (partials) được sử dụng để tạo thành các phần của giao diện, có thể được sử dụng trong các layout.
+
+public: Có thể chứa các tài nguyên tĩnh như CSS, JavaScript, hình ảnh, và các file khác mà bạn muốn công khai và có thể truy cập trực tiếp từ trình duyệt.
